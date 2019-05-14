@@ -5,7 +5,15 @@
 
 trigger:
 - master
-
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: '# Write your commands here
+      
+      # Use the envi
+      ronment variables input below to pass secret variables to this script
+      
+      echo "hello"'
 pool:
   vmImage: 'ubuntu-latest'
 
