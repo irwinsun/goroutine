@@ -5,7 +5,7 @@
 
 trigger:
 - master
-- task: Bash@3
+- task: Bash@
   inputs:
     targetType: 'inline'
     script: '# Write your commands here
