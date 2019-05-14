@@ -12,4 +12,4 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'echo "hello $ddd"'
+    script: 'echo "hello ${ddd}"'
