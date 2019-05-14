@@ -5,21 +5,11 @@
 
 trigger:
 - master
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'echo "hello"'
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: Maven@3
+- task: Bash@3
   inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    targetType: 'inline'
+    script: 'echo "hello"'
